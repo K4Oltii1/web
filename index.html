@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .logo {
+            width: 500px;
+
+            height: auto;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .logo:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+        }
+        .logo:active {
+            transform: scale(0.9);
+            transition: transform 0.1s ease;
+        }
+        .logo:focus {
+            outline: none;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .logo:focus-visible {
+            outline: 2px solid #007bff;
+            outline-offset: 2px;
+        }
+        .logo:focus:not(:focus-visible) {
+            outline: none;
+        }
+        .logo:active:focus {
+            outline: 2px solid #ff0000;
+            outline-offset: 2px;
+        }
+        .logo:focus:not(:active) {
+            outline: 2px solid #00ff00;
+            outline-offset: 2px;
+        }
+        .logo:focus-visible:hover {
+            outline: 2px solid #0000ff;
+            outline-offset: 2px;
+        }
+        .logo:focus-visible:active {
+            outline: 2px solid #ff00ff;
+            outline-offset: 2px;
+        }
+        .logo:focus-visible:focus {
+            outline: 2px solid #ffff00;
+            outline-offset: 2px;
+        }
+        .logo:focus-visible:focus:not(:active) {
+            outline: 2px solid #00ffff;
+            outline-offset: 2px;
+        }
+        .logo:focus-visible:focus:hover {
+            outline: 2px solid #ff8800;
+            outline-offset: 2px;
+        }
+        </style>
+    <body>
+          <img class="logo" src="logo.png" alt="logo">
+        
+        <script src="" async defer></script>
+    </body>
+</html>
